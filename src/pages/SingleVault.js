@@ -5,7 +5,7 @@ import RatioAdjust from './RatioAdjusters'
 import { useState, useEffect, useCallback } from "react";
 
 
-
+//facu smells
 function SingleVaultPage({value}){
 	const {tenderlyProvider, initProvider, closeProvider, defaultProvider, setupTenderly} = useRPCProvider();
     const [allS, setAlls] = useState([])
