@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sealights {
+  background-image: linear-gradient(90deg, #37b8f3 0%, #3a8fd1 49%, #39a9e6 80%, #37b8f3 100%);
+  border-radius: 4px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  animation: sealights 20s linear infinite;
+}
+
+.sealights:hover {
+  background-image: linear-gradient(90deg, #37b8f3 0%, #37b8f3 49%, #37b8f3 80%, #37b8f3 100%);
+}
+
+button {
+  @apply sealights m-2 active:transform hover:scale-[1.03] active:scale-[0.97] transition duration-100 rounded-full cursor-pointer shadow-lg;
+}
+
+@keyframes sealights {
+  to {
+    background-position: 20vw;
+  }
 }

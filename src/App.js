@@ -8,7 +8,7 @@ import {RPCProviderContextApp} from './context/useRpcProvider';
 function App() {
 	return (
 		<RPCProviderContextApp>
-			<div>
+			<div className={'max-w-full min-h-screen text-sky-100 bg-gradient-to-tr from-indigo-900 to-sky-400'}>
 				<BrowserRouter>
 					<Routes>
 						<Route path={'/'} exact={true} element={<DefaultPage />}></Route>
